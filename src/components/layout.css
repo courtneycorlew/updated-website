@@ -620,3 +620,9 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 2rem 1rem;
+}
