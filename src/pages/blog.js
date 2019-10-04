@@ -1,11 +1,14 @@
 import React from "react"
+import { AllBlogPosts } from '../components/AllBlogPosts'
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import("../styles/index.scss")
 
 const Blog = () => (
   <Layout>
-    <SEO title="Blog" />
-    <h1>Blog</h1>
+        <div className="blog">
+      <span className="blog-title">all posts</span>
+    <AllBlogPosts />
+    </div>
   </Layout>
 )
 

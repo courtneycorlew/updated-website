@@ -1,11 +1,13 @@
 .background {
-    padding: 4rem 1rem;
+    padding: 2rem 1rem 3rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     h1 {
         color: black;
-        margin: 0;
+        margin: 0 1rem;
+        text-align: center;
     }
     a {
         margin: 0rem 1rem;

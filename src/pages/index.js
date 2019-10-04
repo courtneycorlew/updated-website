@@ -1,20 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import { BlogPreview } from '../components/blogpreview'
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import("../styles/index.scss")
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="intro-header">
+      <div className="intro-image">
+        <Image />
+      </div>
+      <div className="my-info"><span className="name">Hi, I'm Courtney!</span> <span className="titles">software engineer, entrepreneur, foster mom</span></div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div className="blog">
+      <span className="blog-title">recent posts</span>
+    <BlogPreview limit={3}/>
+    </div>
+
   </Layout>
 )
 

@@ -1,0 +1,20 @@
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .blog-post-preview {
+        margin: 1rem;
+        padding: 10px;
+        background: #64b2cd;
+        text-align: center;
+        color: white;
+        width: 15rem;
+        a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

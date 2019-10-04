@@ -1,0 +1,44 @@
+.intro-header {
+    background-color: #D9EEEC;
+    padding: 2rem;
+    display: flex;
+    position: relative;
+    margin: 1rem 0rem;
+    .intro-image {
+        width: 500px;
+        height: fit-content;
+        border: 15px solid white;
+        }
+        .my-info {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 11rem;
+            right: 3rem;
+            background: white;
+            padding: 2rem;
+            text-align: center;
+            .name {
+                font-size: 40px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .titles {
+                font-size: 15px;
+                font-style: italic
+            }
+        }
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+    .blog-title {
+        font-size: 30px;
+        font-weight: 500;
+        margin: 2rem;
+        font-style: italic
+    }
+}
