@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
       <Link exact to="/" activeClassName="active">{siteTitle}</Link>
     </span>
     <div className="header-links">
-      <Link exact to="/writing" activeClassName="active">Writing</Link>
+      <Link exact to="/writing" activeClassName="active" partiallyActive={true}>Writing</Link>
       <Link exact to="/contact" activeClassName="active">Contact</Link>
     </div>
   </header>

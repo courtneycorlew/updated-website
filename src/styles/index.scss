@@ -90,8 +90,37 @@
 }
 
 .page-container {
-    margin-top: -25px;
-    margin-left: 60px;
+  margin-top: -25px;
+  margin-left: 60px;
+  height: inherit;
+  overflow: hidden;
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover,
+    &:focus,
+    &:active {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 50%,
+        (#bbd9be) 50%
+      );
+    }
+  }
+  .view-all {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    color: #000000;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 25px;
+  }
+  .blog-post-info {
+    display: flex;
+    flex-direction: column;
+  }
   .title {
     text-transform: uppercase;
     font-style: normal;
@@ -100,12 +129,73 @@
     line-height: 47px;
     color: #000000;
   }
-  .content {
-    margin-left: 261px;
+  .date {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: light;
+    font-size: 20px;
+    line-height: 47px;
+    color: #000000;
   }
-}
+  .content {
+    padding: 74px 0 20px 261px;
+    overflow-y: auto;
+    height: inherit;
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      label {
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: light;
+        font-size: 20px;
+        line-height: 47px;
+        color: #000000;
+      }
+      input {
+        height: 50px;
+        margin: 0;
+        box-sizing: border-box;
+        border:0; 
+        outline:0;
+        padding: 1em;
+        display: block;
+        margin-bottom: 1em;
+        resize: none;
+      }
 
+      textarea {
+        margin: 0;
+        box-sizing: border-box;
+        border:0; 
+        outline:0;
+        padding: 1em;
+        display: block;
+        margin-bottom: 1em;
+        resize: none;
+      }
 
-.blog-post-content {
-     margin-top:74px;
+      button {
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: light;
+        font-size: 20px;
+        line-height: 47px;
+        color: #000000;
+        border: none;
+        background: none;
+        cursor: pointer;
+        &:hover,
+        &:focus,
+        &:active {
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 50%,
+            (#bbd9be) 50%
+          );
+        }
+      }
+    }
+  }
 }

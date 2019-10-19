@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import PageLayout from "./pageLayout"
+import { Link } from "gatsby"
 import("../styles/index.scss")
 
 export default function Template({ data }) {
@@ -9,12 +10,14 @@ export default function Template({ data }) {
   return (
     <PageLayout>
       <div className="page-container">
+        <div className="blog-post-info">
         <span className="title">{frontmatter.title}</span>
-        <div className="content">
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+        <span className="date">{frontmatter.date}</span>
+        </div>
+        <div className="view-all">
+        <Link exact to="/writing">View All Posts</Link>
+        </div>
+        <div className="content" dangerouslySetInnerHTML={{ __html: html }}>
         </div>
       </div>
     </PageLayout>
