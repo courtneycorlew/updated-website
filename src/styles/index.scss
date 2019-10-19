@@ -40,16 +40,16 @@
       align-items: center;
       margin-top: 25px;
       a {
-          margin-right: 13px;
-          &:hover,
-          &:focus,
-          &:active {
-            background: linear-gradient(
-              180deg,
-              rgba(255, 255, 255, 0) 50%,
-              (#bbd9be) 50%
-            );
-          }
+        margin-right: 13px;
+        &:hover,
+        &:focus,
+        &:active {
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 50%,
+            (#bbd9be) 50%
+          );
+        }
       }
     }
   }
@@ -87,4 +87,25 @@
     margin: 3rem 0.5rem;
     font-style: italic;
   }
+}
+
+.page-container {
+    margin-top: -25px;
+    margin-left: 60px;
+  .title {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+  }
+  .content {
+    margin-left: 261px;
+  }
+}
+
+
+.blog-post-content {
+     margin-top:74px;
 }

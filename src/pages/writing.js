@@ -1,15 +1,17 @@
 import React from "react"
-import { AllBlogPosts } from '../components/AllBlogPosts'
-import Layout from "../components/layout"
+import { AllBlogPosts } from "../components/AllBlogPosts"
+import PageLayout from "../components/pageLayout"
 import("../styles/index.scss")
 
 const Blog = () => (
-  <Layout>
-        <div className="blog">
-      <span className="blog-title">all posts</span>
-    <AllBlogPosts />
+  <PageLayout>
+    <div className="page-container">
+      <span className="title">Writing</span>
+      <div className="content">
+        <AllBlogPosts />
+      </div>
     </div>
-  </Layout>
+  </PageLayout>
 )
 
 export default Blog

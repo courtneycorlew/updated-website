@@ -32,12 +32,10 @@ export const AllBlogPosts = () =>
               .map(({ node: post }) => {
                 return (
                   <div className="blog-post-preview" key={post.id}>
-                    <h3>
-                      <Link to={post.frontmatter.path}>
-                        {post.frontmatter.title}
-                      </Link>
-                    </h3>
-                    <p>{post.excerpt}</p>
+                    <Link to={post.frontmatter.path}>
+                      <span>{post.frontmatter.title}</span>
+                    </Link>
+                    <p className="blog-date">{post.frontmatter.date}</p>
                   </div>
                 )
               })}
