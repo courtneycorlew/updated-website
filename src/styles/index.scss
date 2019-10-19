@@ -5,27 +5,52 @@
   position: relative;
   height: 473px;
   .intro-image {
-    width: 500px;
-    height: fit-content;
-    border: 15px solid white;
+    position: relative;
+    width: 572px;
+    height: 432px;
+    left: 156px;
+    top: -82px;
   }
   .my-info {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 11rem;
-    right: 3rem;
-    background: white;
+    position: relative;
+    top: -5.2rem;
+    right: -11rem;
     padding: 2rem;
-    text-align: center;
+    text-align: left;
     .name {
+      font-style: normal;
+      font-weight: bold;
       font-size: 40px;
-      font-weight: 500;
-      margin-bottom: 10px;
+      line-height: 47px;
+      color: #000000;
+      margin-bottom: 28px;
     }
-    .titles {
-      font-size: 15px;
-      font-style: italic;
+    .my-info-about {
+      width: 568px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 35px;
+      color: #000000;
+    }
+    .social-media-icons {
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+      a {
+          margin-right: 13px;
+          &:hover,
+          &:focus,
+          &:active {
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0) 50%,
+              (#bbd9be) 50%
+            );
+          }
+      }
     }
   }
 }
