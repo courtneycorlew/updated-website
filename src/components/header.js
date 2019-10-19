@@ -3,21 +3,14 @@ import PropTypes from "prop-types"
 import React from "react"
 import("./header.scss")
 const Header = ({ siteTitle }) => (
-  <header
-    className="background"
-  >
-      <Link to="/now">Now</Link>
-      <Link to="/blog">Blog</Link>
-
-        <h1>
-        <Link
-          to="/"
-        >
-          {siteTitle}
-        </Link>
-        </h1>
-      <Link to="/shop">Shop</Link>
-      <Link to="/contact">Contact</Link>
+  <header className="background">
+    <span className="header-title">
+      <Link exact to="/" activeClassName="active">{siteTitle}</Link>
+    </span>
+    <div className="header-links">
+      <Link exact to="/writing" activeClassName="active">Writing</Link>
+      <Link exact to="/contact" activeClassName="active">Contact</Link>
+    </div>
   </header>
 )
 

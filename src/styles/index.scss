@@ -1,44 +1,65 @@
 .intro-header {
-    background-color: #D9EEEC;
-    padding: 2rem;
+  background: rgba(251, 208, 184, 0.5);
+  padding: 2rem;
+  display: flex;
+  position: relative;
+  height: 473px;
+  .intro-image {
+    width: 500px;
+    height: fit-content;
+    border: 15px solid white;
+  }
+  .my-info {
     display: flex;
-    position: relative;
-    margin: 1rem 0rem;
-    .intro-image {
-        width: 500px;
-        height: fit-content;
-        border: 15px solid white;
-        }
-        .my-info {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 11rem;
-            right: 3rem;
-            background: white;
-            padding: 2rem;
-            text-align: center;
-            .name {
-                font-size: 40px;
-                font-weight: 500;
-                margin-bottom: 10px;
-            }
-            .titles {
-                font-size: 15px;
-                font-style: italic
-            }
-        }
+    flex-direction: column;
+    position: absolute;
+    top: 11rem;
+    right: 3rem;
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    .name {
+      font-size: 40px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .titles {
+      font-size: 15px;
+      font-style: italic;
+    }
+  }
 }
 
 .blog {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 2rem;
-    .blog-title {
-        font-size: 30px;
-        font-weight: 500;
-        margin: 2rem;
-        font-style: italic
-    }
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 2rem;
+  margin: -26px 189px 2rem 189px;
+  z-index: 1;
+  position: relative;
+  .blog-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+  }
+  .blog-list {
+    margin-top: 25px;
+    margin-left: 80px;
+  }
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 2rem;
+  .title {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 3rem 0.5rem;
+    font-style: italic;
+  }
 }

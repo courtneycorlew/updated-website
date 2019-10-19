@@ -1,17 +1,47 @@
 .background {
-    padding: 2rem 1rem 3rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 2rem 1rem 3rem 1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  .header-title {
+    margin: 0 1rem;
     text-align: center;
-    h1 {
-        color: black;
-        margin: 0 1rem;
-        text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  a {
+    margin: 0rem 1rem;
+    text-decoration: none;
+    color: black;
+    &:hover,
+    &:focus,
+    &:active {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 50%,
+        (#bbd9be) 50%
+      );
     }
-    a {
-        margin: 0rem 1rem;
-        text-decoration: none;
-        color: black;
-    }
+  }
+  .header-links {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}
+
+.active {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 50%,
+    (#bbd9be) 50%
+  );
 }

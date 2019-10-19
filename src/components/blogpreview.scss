@@ -1,20 +1,37 @@
 .blog-posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    .blog-post-preview {
-        margin: 1rem;
-        padding: 10px;
-        background: #64b2cd;
-        text-align: center;
-        color: white;
-        width: 15rem;
-        a {
-            text-decoration: none;
-            color: white;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
+  display: flex;
+  flex-direction: column;
+  .blog-post-preview {
+    text-align: left;
+    color: black;
+    span {
+      font-size: 1.7rem;
+      font-weight: 600;
     }
+    a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 35px;
+      color: #000000;
+      text-decoration: none;
+      &:hover,
+      &:focus,
+      &:active {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 50%,
+          (#bbd9be) 50%
+        );
+      }
+    }
+    .blog-date {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 23px;
+      color: #000000;
+      margin-top: 7px;
+    }
+  }
 }

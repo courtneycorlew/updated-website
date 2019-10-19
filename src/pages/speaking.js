@@ -2,11 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Now = () => (
+const Speaking = () => (
   <Layout>
-    <SEO title="Now" />
-    <h1>Now</h1>
+    <SEO title="Speaking" />
+    <h1>Speaking</h1>
   </Layout>
 )
 
-export default Now
+export default Speaking
