@@ -1,5 +1,5 @@
 import React from "react"
-import { AllBlogPosts } from "../components/AllBlogPosts"
+import { AllBlogPosts } from "../components/allblogposts"
 import PageLayout from "../components/pageLayout"
 import("../styles/index.scss")
 
