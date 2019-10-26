@@ -92,10 +92,11 @@
 }
 
 .page-container {
-  margin-top: -25px;
-  margin-left: 60px;
+  top: -25px;
   height: inherit;
   overflow: hidden;
+  position: relative;
+  padding: 0 17px;
   a {
     text-decoration: none;
     color: black;
