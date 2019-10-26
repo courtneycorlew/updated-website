@@ -94,7 +94,7 @@
 .page-container {
   padding: 0 17px;
   overflow-y: auto;
-  margin-top: -25px;
+  // margin-top: -25px;
   a {
     text-decoration: none;
     color: black;
@@ -121,6 +121,8 @@
   .blog-post-info {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 184px;
   }
   .title {
     text-transform: uppercase;
@@ -139,7 +141,7 @@
     color: #000000;
   }
   .content {
-    padding: 74px 0 20px 261px;
+    padding: 74px 0 20px 293px;
     overflow-y: auto;
     height: inherit;
     form {
@@ -244,6 +246,10 @@
   .page-container {
     .content {
       padding: 20px 0 0 0;
+    }
+    .blog-post-info {
+      position: relative;
+      top: 0;
     }
     .view-all {
       display: none; 

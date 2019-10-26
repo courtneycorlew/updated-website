@@ -7,6 +7,7 @@
   justify-content: space-between;
   min-width: auto;
   min-height: 200px;
+
   .header-title {
     margin: 0 1rem;
     text-align: center;
@@ -20,6 +21,7 @@
   a:not(:first-child) {
     margin: 0rem 1rem;
   }
+}
   a {
     text-decoration: none;
     color: black;
@@ -41,7 +43,7 @@
     color: #000000;
     text-transform: uppercase;
   }
-}
+
 
 .active {
   background: linear-gradient(
@@ -61,5 +63,16 @@
     .header-links {
       font-size: 20px;
     }
+  }
+}
+
+footer {
+  text-align: center;
+  .header-links {
+    a {
+    margin: 0rem 1rem;
+    }
+    cursor: pointer;
+    font-size: 15px;
   }
 }
