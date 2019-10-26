@@ -92,11 +92,8 @@
 }
 
 .page-container {
-  top: -25px;
-  height: inherit;
-  overflow: hidden;
-  position: relative;
   padding: 0 17px;
+  overflow-y: auto;
   a {
     text-decoration: none;
     color: black;
