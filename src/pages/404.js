@@ -8,7 +8,7 @@ const NotFoundPage = () => (
       <div className="blog-post-info">
         <span className="title">Page Not Found</span>
         <span className="date">
-          You just hit a route that doesn&#39;t exist... the sadness!
+          Oh no! This route doesn't exist. If you think it should, let me know and I'll fix it!
         </span>
       </div>
     </div>
