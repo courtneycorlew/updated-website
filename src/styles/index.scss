@@ -143,14 +143,38 @@
     color: #000000;
   }
   .content {
-    padding: 74px 0 20px 293px;
     overflow-y: auto;
     height: inherit;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    .info {
+      font-weight: bold;
+      font-size: 20px;
+      color: #000000;
+    }
+    .social-media-icons {
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      a {
+        margin-right: 13px;
+        &:hover,
+        &:focus,
+        &:active {
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 50%,
+            (#bbd9be) 50%
+          );
+        }
+      }
+    }
     form {
       display: flex;
       flex-direction: column;
-      width: 70%;
-      margin: auto;
+
       label {
         text-transform: uppercase;
         font-style: normal;
