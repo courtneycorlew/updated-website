@@ -3,14 +3,11 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  flex-wrap: nowrap;
 }
 
 .main {
   background: rgba(251, 208, 184, 0.5);
-  height: 80vh;
+  flex: 1 1;
   display: flex;
-  overflow: hidden;
   position: relative;
 }
